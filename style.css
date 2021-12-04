@@ -79,12 +79,17 @@ img{
     justify-content: center;
     align-items: center;
 }
-
-.header__nav{
+.header__nav {
     height: 40px;
     background-color: #fe82b2;
-}
-
+    padding: 0 40px;
+    font-weight: bold;
+    color: #fff;
+  } 
+  .header__nav a {
+    color: #fff;
+    text-decoration: none;
+  }
 .header-list{
     display: flex;
     justify-content: space-around;
