@@ -1,12 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora&family=Shippori+Antique+B1&display=swap');
 
 * {
-  margin: 0;
-  padding: 0;
-}
-
-.main__color{
-  color: #fe82b2;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -14,102 +11,127 @@ body {
   font-size: 14px;
   line-height: 1.5;
   background-color: #fff;
-}
-
-.page-fluid {
-  max-width: 1366px;
-  padding: 0;
-}
-
-.header {
-  width: 100%;
-}
-
-.header__sub {
-  background-color: #fe82b2;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
-  height: 40px;
-  width: 100%;
-  padding: 0 35px;
-  color: #fff;
+  overflow: scroll;
+  min-height: 100vh;
+}
+.pages{
+    margin: 0 auto;
+}
+.header {
+    width: 100%;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.bg-header-top{
+    background-color: #fe82b2;
+    width: 100%;
+}
+.header__sub {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    /* padding: 0 40px; */
+    color: #fff;
 }
 
 .header__sub-title {
-  font-size: 17px;
+    font-size: 17px;
 }
-
+.bg-header-main{
+    background-color: #ffeeff;
+}
 .header__main {
-  background-color: #ffeeff;
-  height: 150px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 50px;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 0 70px; */
 }
-
-.header__search {
-  position: relative;
-}
-
-
-.header__input {
-  width: 490px;
-  height: 40px;
-  border: 1px solid rgb(0, 0, 0);
-  background-color: #fecccb;
-  padding-left: 60px;
-}
+.header__main-logo{
+    width: 100px;
+    height: 100px;
+  }
+  .header__main-logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+.header__search{
+    width: 40%;
+ }
+ .header__search button{
+   background-color: #fecccb;
+  }
+ .header__input {
+   background-color: #fecccb;
+   border: none;
+ }
 
 .header__input::placeholder {
-  color: #000;
-  font-style: italic;
+    margin-left: 20px;
 }
 
 .header-btn-icon {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  background-color:transparent;
-  border: 0;
-  top: 0;
-  right: 0;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #fecccb;
+    border: 1px solid rgb(0, 0, 0);
+    border-left-width: 0;
+    margin-left:-40px;
 }
 
 .header__img {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-
+.header__img img{
+    width: 127px;
+    height: 85px;
+    object-fit: cover;
+}
 .header__img-sub {
-  font-size: 18px;
+    font-size: 18px;
 }
-
+.bg-header-nav{
+    background-color: #fe82b2;
+}  
 .header__nav {
-  height: 50px;
-  background-color: #fe82b2;
-  padding: 0 40px;
-  font-weight: bold;
-  color: #fff;
+    height: 40px;
+    /* padding: 0 40px; */
+    font-weight: bold;
+    color: #fff;
+  } 
+  .header__nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+.header-list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+    padding: 0 40px;
+    color: #fff;
+    list-style: none;
+    font-weight: bold;
 }
-.header__nav ul{
-  height: 100%;
-  align-items: center;
-}
-.header__nav a {
-  color: #fff;
-  text-decoration: none;
-}
-
 /* ==========================end header============================ */
 main {
   margin-bottom: 100px;
 }
 .main__sub {
-  padding: 10px 50px;
+  padding: 10px;
   line-height: 1.5rem;
   align-items: center;
   margin-bottom: 45px;
@@ -143,8 +165,8 @@ main {
 }
 
 .details__img-main{
-  width: 540px;
-  height: 625px;
+  width: 100%;
+  height: 100%;
 }
 .details__img-main img{
   width: 100%;
@@ -256,8 +278,8 @@ main {
 
 
 .maylike-list {
-  display: flex;
-  flex-wrap: wrap;
+  /* display: flex; */
+  flex-wrap: nowrap;
   justify-content: space-evenly;
   align-items: center;
   margin-bottom: 70px;
@@ -326,13 +348,12 @@ main {
 
 /* ==============================start fooder=========================== */
 footer {
-  height: 262px;
+  /* height: 262px; */
   background-color: #ff99cb;
   margin-top: 20px;
   padding: 20px 30px;
   display: flex;
   justify-content: space-between;
- 
 }
 
 .footer-list h4 {
