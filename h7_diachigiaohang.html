@@ -23,8 +23,8 @@
       rel="stylesheet"
       href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
     />
-    <link rel="stylesheet" href="h3_tranggiohang.css" />
-    <title>Trang Giỏ hàng bước 1</title>
+    <link rel="stylesheet" href="h7_diachigiaohang.css" />
+    <title>địa chỉ giao hàng</title>
   </head>
   <body>
     <div class="container-fluid p-0">
@@ -104,64 +104,99 @@
           </ul>
       </nav>
       </header>
-      <main class="page-fluid m-auto">
-        <div class="pay">
-          <div class="card__content">
-            <p class="card__content-title">Tags: Thanh toán</p>
-            <div class="card__content-main">
-              <div class="card__content-img">
-                <img src="./img/100039708_alt_JJ.jpg" alt="" />
+    </div>
+      <main class="container-fluid  page-fluid">
+        <div class="row main__sub">
+          <p>Tags: Thanh toán >></p>
+          <span>Địa chỉ giao hàng</span>
+        </div>
+        <div class="row justify-content-between main__form-input">
+          <div class="col-6">
+            <form action="" class="main__form">
+              <div class="form-group">
+                <label for="email" class="control-label">Email: </label>
+                <input
+                  type="email"
+                  class="form-control control-input"
+                  id="email"
+                  name="email"
+                />
               </div>
-              <div class="card__content-text">
-                <p class="card__content-text-name">
-                  <strong>Áo len thổ cầm</strong>
-                </p>
-                <p class="card__content-text-price">
-                  <strong>Giá: </strong>650.000đ
-                </p>
-                <p class="card__content-text-size"><strong>Size: </strong>S</p>
-                <p class="card__content-text-quantity">
-                  <strong>Số lượng: </strong>x1
-                </p>
-                <div class="card__content-text-icon">
-                  <i class="uil uil-eye"></i>
-                  <i class="uil uil-trash-alt"></i>
+              <div class="form-group">
+                <label for="pwd" class="control-label">Họ tên:</label>
+                <input
+                  type="text"
+                  class="form-control control-input"
+                  id="name"
+                  name="name"
+                />
+              </div>
+              <div class="form-group">
+                <label for="email" class="control-label">Số điện thoại:</label>
+                <input
+                  type="text"
+                  class="form-control control-input"
+                  id="phone"
+                  name="phone"
+                />
+              </div>
+              <div class="form-group">
+                <label for="email" class="control-label">Địa chỉ nhận hàng</label>:</label>
+                <input
+                  type="text"
+                  class="form-control control-input"
+                  id="email"
+                  name="email"
+                />
+              </div>
+              <button type="submit" class="btn main__form-btn">
+                Đăng nhập
+              </button>
+              <button
+                type="submit"
+                class="btn main__form-btn main__form-btn-color"
+              >
+                mua hàng mà không cần đăng nhập
+              </button>
+            </form>
+          </div>
+          <div class="col-6 pl-5">
+            <div class="card card__group">
+                <div class="card-body">
+                  <h4 class="card-title">giỏ hàng</h4>
+                  <p class="card-text">Bạn đang có 1 sản phẩn trong giỏi</p>
+                  <div class="card__content">
+                    <div class="d-flex">
+                      <img src="./img/100039708_alt_JJ.jpg" alt="" class="card__content-img">
+                      <span class="card__content-sub">Áo len thổ cầm</span>
+                    </div>
+                    <div class="d-flex flex-column">
+                      <span class="align-items-end card__content-price">650.000đ</span>
+                      <p class="align-self-end">x1<p/>
+                    </div>
+                  </div>
+                  <div class="form-table">
+                    <div class="form-table-group">
+                      <p class="form-table-title">Tổng giá sản phẩm</p>
+                      <p class="form-table-price">650.000đ</p>
+                    </div>
+                    <div class="form-table-group">
+                      <p class="form-table-title">Số lượng</p>
+                      <p class="form-table-price">1</p>
+                    </div>
+                    <div class="form-table-group">
+                      <p class="form-table-title">Phí vận chuyển</p>
+                      <p class="form-table-price"></p>
+                    </div>
+                    <div class="form-table-group">
+                      <p class="form-table-title">Tạm tính</p>
+                      <p class="form-table-price form-table-price-color">650.000đ</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="pay__form">
-            <h3 class="form-title">mã giảm giá</h3>
-            <div class="form-input">
-              <input
-                type="text"
-                placeholder="Nhập mã giảm giá"
-                class="form-input-text"
-              />
-              <button class="form-input-btn">Áp dụng</button>
-            </div>
-            <div class="form-table">
-              <div class="form-table-group">
-                <p class="form-table-title">Tổng giá sản phẩm</p>
-                <p class="form-table-price">650.000đ</p>
-              </div>
-              <div class="form-table-group">
-                <p class="form-table-title">Số lượng</p>
-                <p class="form-table-price">1</p>
-              </div>
-              <div class="form-table-group">
-                <p class="form-table-title">Phí vận chuyển</p>
-                <p class="form-table-price"></p>
-              </div>
-              <div class="form-table-group">
-                <p class="form-table-title">Tạm tính</p>
-                <p class="form-table-price form-table-price-color">650.000đ</p>
-              </div>
-            </div>
-            <div class="btn-table">
-            <a href="h4_tranggiohang.html"> <button class="btn-table-btn">thanh toán</button> </a> 
-            </div>
-          </div>
+          
         </div>
       </main>
       <footer class="container-fluid">
@@ -226,6 +261,6 @@
           </div>
         </div>
       </footer>
-    </div>
+    
   </body>
 </html>

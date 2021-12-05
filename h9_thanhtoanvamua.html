@@ -13,8 +13,8 @@
         integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous" />
     <!-- link iconscou -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
-    <link rel="stylesheet" href="h5_tranggiohang.css" />
-    <title>Trang Giỏ hàng bước 2</title>
+    <link rel="stylesheet" href="h9_thanhtoanvamua.css" />
+    <title>địa chỉ giao hàng</title>
 </head>
 
 <body>
@@ -56,10 +56,8 @@
                     <span class="header__img-sub">Đăng nhập/Đăng ký</span>
                 </div>
                 <div class="header__img">
-                    <a href="H3_TrangGioHangB1.html" class="text-decoration-none header__img">
-                        <img src="./img/giohang.png" alt="">
-                        <span class="header__img-sub text-dark">Hàng Mới</span>
-                    </a>
+                    <a href=""><img src="./img/giohang.png" alt="" /></a>
+                    <span class="header__img-sub">Giở hàng</span>
                 </div>
             </div>
             <nav class="header__nav">
@@ -97,66 +95,64 @@
                 </ul>
             </nav>
         </header>
-        <main class="container-fluid page-fluid">
-            <div class="row main__sub">
-                <p>Tags: Thanh toán >></p>
-                <span>Thông tin đăng nhập</span>
-            </div>
-            <div class="row justify-content-between main__form-input">
-                <div class="col-6">
-                    <form action="" class="main__form">
-                        <div class="form-group">
-                            <label for="email" class="control-label">Tài khoản:</label>
-                            <input type="text" class="form-control control-input" id="email" name="email" />
+    </div>
+    <main class="container-fluid  page-fluid">
+        <div class="row main__sub">
+            <p>Tags: Thanh toán >></p>
+            <span>Thanh toán đặt và mua</span>
+        </div>
+        <div class="contaner-fluid details-page">
+            <div class="row">
+                <div class="col6">
+                    <form action="" class="form-method">
+                        <div class="mb-5">
+                            <label for="">Phương thức vận chuyển:</label>
+                            <ul>
+                                <li><input type="radio" />giao hàng tiêu chuẩn</li>
+                            </ul>
                         </div>
-                        <div class="form-group">
-                            <label for="pwd" class="control-label">Mật khẩu:</label>
-                            <input type="password" class="form-control control-input" id="pwd" name="pswd" />
+                        <div>
+                            <label for="">Phương thức thanh toán:</label>
+                            <ul>
+                                <li>
+                                    <input type="radio" name="vanchuyen" value="" />Thanh toán
+                                    khi nhận được hàng
+                                </li>
+                                <li>
+                                    <input type="radio" name="vanchuyen" value="" />Thanh toán
+                                    sử dụng thẻ ngân hàng nội địa/Intenentbanking
+                                </li>
+                                <li>
+                                    <input type="radio" name="vanchuyen" value="" />Chuyển
+                                    khoản qua ngân hàng
+                                </li>
+                                <li>
+                                    <input type="radio" name="vanchuyen" value="" />ví điện tử
+                                </li>
+                            </ul>
                         </div>
-                        <a href="h7_diachigiaohang.html"><button class="btn main__form-btn">
-                                Đăng nhập
-                            </button></a>
-                        <button type="submit" class="btn main__form-btn main__form-btn-color">
-                            mua hàng mà không cần đăng nhập
-                        </button>
+                        <h3 class="form-title">mã giảm giá</h3>
+                        <div class="form-input">
+                            <input type="text" placeholder="Nhập mã giảm giá" class="form-input-text" />
+                            <button class="form-input-btn">Áp dụng</button>
+                        </div>
+                        <button class="form-btn text-uppercase">đặt hàng</button>
                     </form>
                 </div>
                 <div class="col-6 pl-5">
                     <div class="card card__group">
                         <div class="card-body">
                             <h4 class="card-title">giỏ hàng</h4>
-                            <p class="card-text">Bạn đang có 1 sản phẩn trong giỏi</p>
+                            <p class="card-text">Bạn đang có 1 sản phẩn trong giỏ</p>
                             <div class="card__content">
                                 <div class="d-flex">
-                                    <img src="./img/100039708_alt_JJ.jpg" alt="" class="card__content-img">
+                                    <img src="./img/100039708_alt_JJ.jpg" alt="" class="card__content-img" />
                                     <span class="card__content-sub">Áo len thổ cầm</span>
                                 </div>
                                 <div class="d-flex flex-column">
                                     <span class="align-items-end card__content-price">650.000đ</span>
-                                    <p class="align-self-end">x1
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card__content">
-                                <div class="d-flex">
-                                    <img src="./img/100039708_alt_JJ.jpg" alt="" class="card__content-img">
-                                    <span class="card__content-sub">Áo len thổ cầm</span>
-                                </div>
-                                <div class="d-flex flex-column">
-                                    <span class="align-items-end card__content-price">650.000đ</span>
-                                    <p class="align-self-end">x1
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="card__content">
-                                <div class="d-flex">
-                                    <img src="./img/100039708_alt_JJ.jpg" alt="" class="card__content-img">
-                                    <span class="card__content-sub">Áo len thổ cầm</span>
-                                </div>
-                                <div class="d-flex flex-column">
-                                    <span class="align-items-end card__content-price">650.000đ</span>
-                                    <p class="align-self-end">x1
-                                    </p>
+                                    <p class="align-self-end">x1</p>
+                                    <p />
                                 </div>
                             </div>
                             <div class="form-table">
@@ -173,20 +169,29 @@
                                     <p class="form-table-price"></p>
                                 </div>
                                 <div class="form-table-group">
-                                    <p class="form-table-title">Tạm tính</p>
-                                    <p class="form-table-price form-table-price-color">650.000đ</p>
+                                    <p class="form-table-title font-weight-bold">Tạm tính</p>
+                                    <p class="form-table-price form-table-price-color">
+                                        650.000đ
+                                    </p>
                                 </div>
                             </div>
                         </div>
+                        <div class="address d-flex flex-column">
+                            <span class="address-title font-weight-bold">Giao tới</span>
+                            <span class="address-name font-weight-bold">Xuân huỳnh</span>
+                            <p class="address-description">Quận Hoàng Mai, Xã Phú Đông, Huyện Ba Vì, Hà Nội</p>
+                            <p class="address-phone">0973078703</p>
+                        </div>
                     </div>
+
                 </div>
             </div>
-    </div>
+        </div>
     </main>
     <footer class="container-fluid">
         <div class="row">
             <div class="col-3 footer-list">
-                <h4>VỀ THE SUN KIDS</h4>
+                <h4 class="text-uppercase">về the sun kids</h4>
                 <p>
                     THE SUN KIDS cung cấp các dòng sản phẩn Thời trang và Phong cách.
                     Cho dù bạn dang tìm trang phục Dự tiệc, trang phục thường ngày,
@@ -196,7 +201,7 @@
                 </p>
             </div>
             <div class="col-3 footer-list">
-                <h4>CỦA HÀNG CỦA CHÚNG TÔI</h4>
+                <h4 class="text-uppercase">cửa hàng của chúng tôi</h4>
                 <ul>
                     <li>Về chúng tôi</li>
                     <li>Liên hệ chúng tôi</li>
@@ -208,7 +213,7 @@
                 </ul>
             </div>
             <div class="col-3 footer-list">
-                <h4>TRỢ GIÚP & THÔNG TIN</h4>
+                <h4 class="text-uppercase">trợ giúp và thông tin</h4>
                 <ul>
                     <li>Giao hàng & vận chuyển</li>
                     <li>Trả lại, Trao đổi & Hủy bỏ</li>
@@ -221,19 +226,19 @@
                 </ul>
             </div>
             <div class="col-3 footer-list">
-                <h4>CHĂM SÓC KHÁCH HÀNG</h4>
+                <h4 class="text-uppercase">chăm sóc khách hàng</h4>
                 <ul class="d-flex flex-column justify-content-between">
-                    <li class="fooder__connect d-flex align-items-center">
-                        <i class="uil uil-phone"></i><span>+84216313115</span>
+                    <li class="fooder__connect">
+                        <i class="uil uil-phone"></i><a>+84216313115</a>
                     </li>
                     <li class="fooder__connect">
-                        <i class="uil uil-facebook"></i><span>http://www.facebook.com/kids/c-A40</span>
+                        <i class="uil uil-facebook"></i><a>http://www.facebook.com/kids/c-A40</a>
                     </li>
                     <li class="fooder__connect">
-                        <i class="uil uil-envelope"></i><span>thsunkids@gmail.com</span>
+                        <i class="uil uil-envelope"></i><a>thsunkids@gmail.com</a>
                     </li>
                     <li class="fooder__connect">
-                        <i class="uil uil-twitter-alt"></i><span>http://www.twitter.com/kids/c-A40</span>
+                        <i class="uil uil-twitter-alt"></i><a>http://www.twitter.com/kids/c-A40</a>
                     </li>
                     <li class="fooder__connect">
                         <i class="uil uil-map-marker"></i><span>35 phố Mới,Thị trấn Thổ Tang, huyện VT, tỉnh VP</span>
@@ -242,7 +247,7 @@
             </div>
         </div>
     </footer>
-    </div>
+
 </body>
 
 </html>

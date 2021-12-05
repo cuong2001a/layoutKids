@@ -174,7 +174,16 @@ img{
 .banner1 {
     margin-top: 40px;
 }
-
+.banner1 .img-footer{
+    width: 794px;
+    height: 430px;
+    object-fit: cover;
+}
+.banner1 .img-footer1{
+    width: 568px;
+    height: 430px;
+    object-fit: cover;
+}
 footer {
     height: 262px;
     background-color: #ff99cb;
